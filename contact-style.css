@@ -15,7 +15,7 @@ time, mark, audio, video, mark {
     padding: 0;
     border: 0;
     font: inherit;
-    color: white;
+    color: black;
     text-decoration: none;
     list-style-type: none;
     font-family: Arial, sans-serif;
@@ -36,4 +36,18 @@ ul{
 
 li{
     color: beige;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 150px;;
+}
+
+button{
+    border-radius: 10px;
+    width: 100px;
 }
