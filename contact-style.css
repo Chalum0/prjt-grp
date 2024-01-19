@@ -1,0 +1,116 @@
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, mark {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    background-color: unset;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    color: whitesmoke;
+    background-color: black;
+    justify-content: space-around;
+    box-sizing: border-box;
+    height: 4rem;
+    }
+
+nav ul {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    list-style: none;}
+
+nav ul li{
+    box-sizing : border-box;
+    padding: 20px;
+}
+
+nav a:hover{cursor: pointer;
+    transition: background-color, color, 2s;  
+    background-color: whitesmoke;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 15px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{cursor: pointer;
+    transition: background-color, color, 2s;  
+    background-color: gray;
+    color: black;
+}
+
+#text_button_click {
+    margin-top: 15px;
+    color: #333;
+}
