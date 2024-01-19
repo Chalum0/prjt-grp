@@ -11,18 +11,27 @@ nav {
     color: whitesmoke;
     background-color: black;
     justify-content: space-around;
+    box-sizing: border-box;
+    height: 10vh;
     ul {
+        box-sizing: border-box;
+        margin: 0;
         display: flex;
         list-style: none;
         li{
-            padding: 10px;
+            box-sizing : border-box;
+            padding: 20px;
         }
-    li:hover{cursor: pointer;
+    a:hover{cursor: pointer;
         transition: background-color, color, 2s;  
         background-color: whitesmoke;
         color: black;
     }
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+      }
     
 }
 
@@ -33,18 +42,28 @@ div {
 }
 
 div img {
-    /* width: 270px;
-    height: 300px; */
     margin: 0 30px 0 2px;
     object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s;
 }
 
-img:hover {
-    cursor: pointer;
+section{
+    margin-bottom: 5vh;
 }
 
 h1{
     text-align: center;
+    font-weight: lighter;
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+
+.divider {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10vh;
 }
 
 h2 {
@@ -52,4 +71,76 @@ h2 {
     text-align: center;
     font-weight: lighter;
 }
-p{}
+
+#presentation {
+    height : 370px;
+    width: 470px;
+    background-color: black;
+    color: whitesmoke;
+    margin-right : 30px;
+    h2 {
+        text-align: left;
+        text-decoration: underline;
+        margin : 3%;
+        margin-left :5%
+    }
+    p {
+        margin : 5%;
+        text-align: justify;
+
+    }
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: whitesmoke;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity, 0.5s;
+    text-align: justify;
+    width : 400px;
+    height : 300px;
+    padding: 20px;
+  }
+
+  .overlay {
+    position: relative;
+  }
+
+  .overlay:hover{
+    cursor: pointer;
+    .overlay-text {opacity: 1;}
+    img {filter: brightness(50%)}
+  }
+
+  footer {
+    height: 15vh;
+    background-color: black;
+    color: whitesmoke;
+    font-weight: lighter;
+    text-align: center;
+    p {
+        padding: 3%;
+        font-size: smaller;
+        margin-bottom: 0;
+    }
+  }
+
+@media (max-width: 600px){
+    h1{font-size: 150%;}
+    h2{font-size: 130%;}
+    p{font-size: 90%;}
+    li{font-size: 85%;
+    text-align: center;}
+    }
+
+@media (max-width: 400px){
+    h1{font-size: 130%;}
+    h2{font-size: 120%;}
+    p{font-size: 75%;}
+    li{font-size: 60%;
+    text-align: center;}
+ }
