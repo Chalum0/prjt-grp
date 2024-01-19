@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
 }
 
+/* NAVBAR */
 nav {
     display: flex;
     color: whitesmoke;
@@ -13,28 +14,32 @@ nav {
     justify-content: space-around;
     box-sizing: border-box;
     height: 10vh;
-    ul {
-        box-sizing: border-box;
-        margin: 0;
-        display: flex;
-        list-style: none;
-        li{
-            box-sizing : border-box;
-            padding: 20px;
-        }
-    a:hover{cursor: pointer;
-        transition: background-color, color, 2s;  
-        background-color: whitesmoke;
-        color: black;
     }
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-      }
-    
+
+nav ul {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    list-style: none;}
+
+nav ul li{
+    box-sizing : border-box;
+    padding: 20px;
 }
 
+nav a:hover{cursor: pointer;
+    transition: background-color, color, 2s;  
+    background-color: whitesmoke;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+/*SECTIONS*/
 div {
     display: flex;
     flex-wrap: wrap;
@@ -78,18 +83,21 @@ h2 {
     background-color: black;
     color: whitesmoke;
     margin-right : 30px;
-    h2 {
-        text-align: left;
-        text-decoration: underline;
-        margin : 3%;
-        margin-left :5%
-    }
-    p {
-        margin : 5%;
-        text-align: justify;
-
-    }
 }
+
+#presentation p {
+    margin : 5%;
+    text-align: justify;
+    }
+
+#presentation h2 {
+    text-align: left;
+    text-decoration: underline;
+    margin : 3%;
+    margin-left :5%
+    }
+
+/*OVERLAY*/
 .overlay-text {
     position: absolute;
     top: 50%;
@@ -116,19 +124,21 @@ h2 {
     img {filter: brightness(50%)}
   }
 
+/*FOOTER*/
   footer {
     height: 15vh;
     background-color: black;
     color: whitesmoke;
     font-weight: lighter;
     text-align: center;
-    p {
-        padding: 3%;
-        font-size: smaller;
-        margin-bottom: 0;
-    }
   }
+  footer p {
+    padding: 3%;
+    font-size: smaller;
+    margin-bottom: 0;
+}
 
+/*responsivité*/
 @media (max-width: 600px){
     h1{font-size: 150%;}
     h2{font-size: 130%;}
