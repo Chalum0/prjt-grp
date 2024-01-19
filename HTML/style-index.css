@@ -157,6 +157,7 @@ h2 {
     color: whitesmoke;
     font-weight: lighter;
     text-align: center;
+    margin-top: 2rem;
   }
   footer p {
     padding: 3%;
@@ -178,5 +179,14 @@ h2 {
     h2{font-size: 120%;}
     p{font-size: 75%;}
     li{font-size: 60%;
+    text-align: center;}
+ }
+
+ @media (max-width: 300px){
+    h1{font-size: 110%;}
+    h2{font-size: 100%;}
+    p{font-size: 65%;}
+    li{font-size: 55%;
+        padding: 0;
     text-align: center;}
  }
